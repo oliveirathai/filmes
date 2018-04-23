@@ -5,8 +5,9 @@
       <p class="lead">
         Atividade - curso
       </p>
+      <app-form-pesquisa (pesquisa)="carregaLista($event)"></app-form-pesquisa>
       <hr class="my-4">
-      
+   
       <p class="lead">
       </p>
       <app-filme-card (apaga)="apagaFilme($event)"[filme]='filme'*ngFor="let filme of listaFilmes"> </app-filme-card>
